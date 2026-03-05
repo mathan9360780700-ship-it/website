@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" id="html" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>COFFEE WORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<body class="font-display ">
+    <!-- header section -->
+    <header>
+        <nav class="bg-orange-500 lg:w-378 md:w-278 lg:fixed sticky top-0 z-100">
+            <div class="@contanier flex wrap">
+              <h1 class="text-2xl p-3  text-red-100">COFFEE WORLD</h1>
+              <div class="">
+                    <ul class="text-orange-200 list-none gap-3 pt-4 lg:ml-240 lg:flex wrap lg:gap-6 hidden">
+                        <li class="active:border-b-2 border-b-yellow-500 "><a href="#HOME">HOME</a></li>
+                        <li class="active:border-b-2 border-b-yellow-500"><a href="#MENU">MENU</a></li>
+                        <li class="active:border-b-2 border-b-yellow-500"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="active:border-b-2 border-b-yellow-500"><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+              </div>
+            </div>
+
+            <div class="absolute inset-y-0 left-0 h-10 flex wrap sm:ml-140 md:ml-235 ml-70 mt-2 border-2 rounded  lg:hidden ">
+                <button type="button" command="--toggle" class="hover:bg-white/5 hover:text-white w-10  active:outline-2 active:rounded active:outline-red-100 duration-500 ease-in-out" commandfor="mobile-menu">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">open main menu</span>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true" fill="currentColor" class="bi bi-list size-10 flex " viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" class="" size="100" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                   </svg>
+                </button>
+            </div>
+            <el-disclosure id="mobile-menu" hidden class="block lg:hidden ">
+              <div class="space-y-1 px-2 pt-2 pb-3 ">
+                  <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                  <a href="#HOME" aria-current="page" class="block rounded-md hover:text-red-100 hover:not:text-gray-300 px-3 py-2 text-base font-medium text-white">HOME</a>
+                  <a href="#MENU" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">MENU</a>
+                  <a href="#ABOUT" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">ABOUT</a>
+                  <a href="#CONTACT" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">CONTACT</a>
+                </div>
+            </el-disclosure>
+        </nav>
+    </header>
+
+    <!-- heeading section -->
+    <section id="HOME">
+        <div class=" flex wrap grid grid-cols-1 lg:row-12">
+            <div class="lg:h-200 bg-[url('/image/coffee.jpg')] bg-cover bg-norepeat  lg:w-378  md:h-170 h-100">
+                <div class="bg-transparent  border-gray-200 lg:absolute lg:top-80 lg:left-40 md:absolute md:top-50 md:left-20  h-140">
+                    <h1 class="lg:text-7xl text-orange-100 text-center  font-display md:text-5xl sm:text-5xl text-2xl mt-40">WELCOME TO MY COFFEE WORLD</h1>
+                    <a href="#CONTACT">
+                     <button class="bg-orange-500 bg-orange-900  md:w-50 md:mt-4 border-white text-white rounded-full  p-2 text-center justify-center ml-40 mt-10 ">connect with me</button>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section -->
+    <section id="MENU">
+        <div class="grid gap-2 p-10 bg-linear-to-l from-gray-900 to-gray-800 to-gray-500 lg:grid-cols-3  md:grid-cols-2  sm:grid-cols-1">
+            <!-- menu options -->
+            <div class=" p-5  flex wrap sm:justify-center cursor-pointer ">
+                <div class="card border-3 border-blue-500 border-inset shadow-xl/30 shadow-blue-500/50  lg:w-100 rounded-3xl group overflow-hiidden md:w-90 sm:w-120">
+                    <img src="/image/latte-coffee-cup.jpg" class="lg:w-100 h-90 rounded-3xl  transition-transform duration-500 group-hover:scale-95 md:w-90 sm:w-120 rounded" alt="the frist menu is coffee">
+                    <h1 class="text-center font-display text-white lg:text-2xl pt-4">COFFEE</h1>
+                    <p class="text-white lg:p-3 md:p-3 sm:p-5 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi architecto atque dolores id doloremque blanditiis et nam cum accusamus soluta sed dolore veritatis nulla minus dolorem, magnam incidunt quam.</p>
+                </div>
+            </div>
+            <div class="p-5  flex wrap sm:justify-center cursor-pointer ">
+                <div class="card border-3 rounded-0 border-blue-500 shadow-xl/30 shadow-blue-500/50 lg:w-100 rounded-3xl group overflow-hidden md:w-90 sm:w-120 ">
+                    <img src="/image/somosa.jpg" class="lg:w-100 h-90 rounded-3xl  transition-transform duration-500 group-hover:scale-95 md:w-90 sm:w-120  rounded" alt="">
+                    <h1 class="text-center font-display text-white lg:text-2xl pt-4 ">SOMOSA</h1>
+                    <p class="text-white lg:p-3 md:p-3 sm:p-5 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi architecto atque dolores id doloremque blanditiis et nam cum accusamus soluta sed dolore veritatis nulla minus dolorem, magnam incidunt quam.</p>
+                </div>
+            </div>
+            <div class="p-5  flex wrap sm:justify-center cursor-pointer">
+                <div class="card border-3 rounded-0 border-blue-500 shadow-xl/30 shadow-blue-500/50 lg:w-100 rounded-3xl group overflow-hidden md:w-90  sm:w-120 ">
+                    <img src="/image/bun.jpg" class="lg:w-100 lg:h-90 rounded-3xl  transition-transform duration-500 group-hover:scale-95 md:w-90 rounded sm:w-120" alt="">
+                    <h1 class="text-center font-display text-white lg:text-2xl pt-4">JAM BUN</h1>
+                    <p class="text-white lg:p-3 md:p-3 sm:p-5 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum animi architecto atque dolores id doloremque blanditiis et nam cum accusamus soluta sed dolore veritatis nulla minus dolorem, magnam incidunt quam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+     <section id="ABOUT">
+        <div class=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 md:p-10 md:border-y-2 md:border-blue-400 md:mt-4 bg-violet-100">
+            <div class="cols-span-2">
+                <!-- about headindg section -->
+                <div class="about lg:p-5">
+                    <h1 class="lg:text-5xl border-b-2 border-double border-b-yellow-500 text-indigo-500 p-3 md:text-2xl m-2">ABOUT</h1>
+                    <p class="bg-gray-300  text-black shadow-xl shadow-gray-500/100  lg:p-5 lg:mt-10 lg:h-140 lg:ml-10 rounded-3xl lg:pt-10 md:h-100 md:p-7 md:mt-3 m-3 p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quisquam officiis tenetur quasi ipsa. Deserunt, inventore! Harum ad, adipisci quia sunt earum rem tenetur consectetur fugit, possimus at ex repellendus.</p>
+                </div>
+            </div>
+            <div class="flex wrap justify-center lg:p-10 lg:ml-40 md:pt-3">
+                <img src="/image/view-3d-coffee-cup-with-roasted-beans.jpg" class="image-norepeat rounded-5xl lg:ml-5 lg:h-170 lg:skew-x-12 md:h-115  md:ml-10 md:w-95  md:skew-x-12 sm:w-150 sm:h-160 h-100" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="CONTACT">
+        <form class="space-y-4">
+           <div class="">
+               <div class="contact  lg:h-140 md:120 h-90 bg-gray-500  mt-3 ">
+                   <div class="flex flex-col wrap items-center">
+                      <h1 class="text-center  lg:text-5xl lg:p-10 sm:p-5 sm:text-4xl p-2 text-2xl">CONTACT</h1>
+
+                      <label for="name" class="lg:mr-239 lg:text-2xl md:text-2xl md:mr-180 block sm:text-xl sm:mr-103 mr-45  text-lg ">Name:</label>
+                      <input type="text" class="text-lg bg-blue-100 block lg:p-2 lg:ml-40 lg:rounded-lg lg:w-300 md:w-200 md:p-1 md:rounded-lg sm:w-120 sm:rounded-md sm:p-1 w-60 rounded" id="name" pattern="[A-Za-z]" required>
+
+                      <label for="phone number" class="lg:mr-213 lg:gap-2 lg:text-2xl mr-26 text-lg md:text-2xl md:mr-154 sm:text-xl sm:mr-81">Phone Number:</label>
+                      <input type="tel" id="phone" pattern="[0-9]{10}"  class="text-lg bg-blue-100 lg:rounded-lg block  lg:p-2 lg:ml-40 lg:w-300 md:w-200 md:p-1 md:rounded-lg sm:w-120 sm:rounded-md sm:p-1 w-60 rounded" required>
+
+                      <label for="email" class="lg:mr-233 lg:text-2xl mr-42 md:text-2xl md:mr-173 sm:text-xl sm:mr-97">Email Id:</label>
+                      <input type="email" class="text-lg  bg-blue-100 lg:rounded-lg block valid:text-green-500 invalid:text-red-500 lg:p-2 lg:ml-40 lg:w-300 md:w-200 md:p-1 md:rounded-lg sm:w-120 sm:rounded-md sm:p-1 w-60 rounded" required="example@gmail.com" >
+
+                      <button type="submit" class="cursor-pointer lg:w-300 lg:p-2 lg:ml-40 lg:mt-5 lg:text-2xl lg:rounded-lg text-white bg-linear-to-l from-gray-700 to-gray-900 md:p-1 md:w-200 md:mt-4 md:rounded-lg sm:w-120 sm:rounded-md sm:p-2 sm:mt-3 w-60 rounded p-1 mt-2">submit</button>
+                   </div>
+                </div>
+           </div> 
+        </form>
+    </section>
+
+    <footer>
+        <div class="lg:w-378 lg:h-10 bg-black flex wrap">
+            <div class="text-white p-1">
+                <button class="border-1 border-white text-white rounded-xl w-6">c</button>
+                <h4 class="inline text-2xl ">copy right google for 2024</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</html>
