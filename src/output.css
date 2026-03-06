@@ -468,6 +468,9 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\/image\/coffee\.jpg\'\)\] {
+    background-image: url('./image/coffee.jpg');
+  }
   .bg-\[url\(\'\/image\/coffee\.jpg\'\)\] {
     background-image: url('/image/coffee.jpg');
   }
